@@ -1,0 +1,9 @@
+.\objects\main.o: ..\app\main.c
+.\objects\main.o: D:\Keil_v5\Core\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\main.o: D:\Keil_v5\Core\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\main.o: ..\app\inc\main.h
+.\objects\main.o: ..\app\inc\board.h
+.\objects\main.o: ..\driver\bl_uart.h
+.\objects\main.o: D:\Keil_v5\Core\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\main.o: ..\app\inc\bootloader.h
+.\objects\main.o: D:\Keil_v5\Core\ARM\ARMCC\Bin\..\include\stdbool.h

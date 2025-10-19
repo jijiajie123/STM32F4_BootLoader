@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "name": "boot_new_",
+            "intelliSenseMode": "linux-gcc-arm",
+            "compilerPath": "C:/Users/25799/Documents/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc.exe",
+            "cStandard": "c99",
+            "cppStandard": "c++11",
+            "includePath": [
+                "app",
+                "app/inc",
+                "driver",
+                "firmware/cmsis/core",
+                "firmware/driver/inc",
+                "firmware/cmsis/device",
+                "third_lib/ringbuffer",
+                "third_lib/rtt_viewer",
+                "third_lib/crc"
+            ],
+            "defines": [
+                "STM32F40_41xxx",
+                "USE_STDPERIPH_DRIVER",
+                "HSE_VALUE=8000000"
+            ]
+        }
+    ],
+    "version": 4
+}

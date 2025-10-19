@@ -1,0 +1,62 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.40.0.0
+Copyright (C) 2024 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 3 54, 5, LIC=ATTQ1-CZH24-GK6BG-VAAV6-KUDXM-H049R
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.40.0.3
+Toolchain Path:  D:\Keil_v5\Core\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.40.0.3
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      Segger\JL2CM3.dll V2.99.44.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\STM32code\meihua\boot_new_\mdk\boot_new_.uvprojx
+Project File Date:  10/14/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Keil_v5\Core\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling bootloader.c...
+..\app\bootloader.c(382): error:  #101: "pbuf" has already been declared in the current scope
+      uint8_t *pbuf = &packet_buf[4];
+..\app\bootloader.c(472): warning:  #188-D: enumerated type mixed with another type
+      bl_opcode_t opcode = packet_buf[1];
+..\app\bootloader.c(528): warning:  #223-D: function "cpu_tick_get" declared implicitly
+      uint64_t last_byte_ticks = cpu_tick_get();
+..\app\bootloader.c(533): warning:  #223-D: function "cpu_get_ticks" declared implicitly
+          now_ticks = cpu_get_ticks();
+..\app\bootloader.c(142): warning:  #177-D: function "get_u8_le_inc"  was declared but never referenced
+  static inline uint8_t get_u8_le_inc(uint8_t **p)
+..\app\bootloader.c(149): warning:  #177-D: function "get_u8"  was declared but never referenced
+  static inline uint8_t get_u8(const uint8_t *p, int i)
+..\app\bootloader.c: 5 warnings, 1 error
+compiling cpu_tick.c...
+compiling flash_ops.c...
+".\Objects\boot_new_.axf" - 1 Error(s), 5 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.3.1.1.pack
+                Keil::STM32F4xx_DFP@3.1.1
+                STMicroelectronics STM32F4 Series Device Support
+
+<h2>Collection of Component include folders:</h2>
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:05
+</pre>
+</body>
+</html>

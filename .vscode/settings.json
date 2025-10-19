@@ -1,0 +1,17 @@
+{
+    "files.associations": {
+        "*.txt": "plaintext",
+        "stddef.h": "c",
+        "ringbuffer.h": "c",
+        "stdbool.h": "c",
+        "stdint.h": "c",
+        "bootloader.h": "c",
+        "board.h": "c",
+        "main.h": "c",
+        "bl_uart.h": "c",
+        "stdio.h": "c",
+        "stm32f4xx.h": "c",
+        "cpu_tick.h": "c",
+        "flash_ops.h": "c"
+    }
+}

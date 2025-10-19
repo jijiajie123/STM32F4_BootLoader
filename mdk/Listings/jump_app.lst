@@ -1,0 +1,51 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         
+    2 00000000                 AREA             |.text|, CODE, READONLY
+    3 00000000         
+    4 00000000         ; Reset handler
+    5 00000000         jump_to_app
+                               PROC
+    6 00000000                 EXPORT           jump_to_app
+    7 00000000         
+    8 00000000         ;set vtor
+    9 00000000 4902            LDR              R1, =0xE000ED08
+   10 00000002 6008            STR              R0, [R1]
+   11 00000004 F8D0 D000       LDR              sp, [R0, #0]
+   12 00000008 F8D0 F004       LDR              pc, [R0, #4]
+   13 0000000C         
+   14 0000000C                 ENDP
+                       
+              E000ED08 
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp.sp --apcs=
+interwork --depend=.\objects\jump_app.d -o.\objects\jump_app.o --predefine="__M
+ICROLIB SETA 1" --predefine="__UVISION_VERSION SETA 540" --predefine="STM32F407
+xx SETA 1" --list=.\listings\jump_app.lst ..\app\jump_app.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+.text 00000000
+
+Symbol: .text
+   Definitions
+      At line 2 in file ..\app\jump_app.s
+   Uses
+      None
+Comment: .text unused
+jump_to_app 00000000
+
+Symbol: jump_to_app
+   Definitions
+      At line 5 in file ..\app\jump_app.s
+   Uses
+      At line 6 in file ..\app\jump_app.s
+Comment: jump_to_app used once
+2 symbols
+338 symbols in table
